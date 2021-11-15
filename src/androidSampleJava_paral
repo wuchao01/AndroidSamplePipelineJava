@@ -5,6 +5,7 @@ pipeline{
 
     stages{
         stage('获取源码') {
+        //并行拉取代码，节约资源
             parallel {
                 stage('安卓程序源码') {
                     steps {
