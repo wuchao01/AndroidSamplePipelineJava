@@ -10,7 +10,7 @@ pipeline{
                 sh 'mkdir -p AndroidSampleApp'
                 //类似checkout AndroidSampleApp
                 dir("AndroidSampleApp"){
-                    git branch:'master', url:'git@github.com:princeqjzh/AndroidSampleApp.git'
+                    git branch:'master', url:'https://github.com/wuchao01/AndroidSampleApp.git'
                 }
             }
         }
@@ -51,7 +51,7 @@ pipeline{
             steps {
                 sh 'mkdir -p iAppBVT'
                 dir("iAppBVT"){
-                    git branch:'master', url:'git@github.com:princeqjzh/iAppBVT.git'
+                    git branch:'master', url:'https://github.com/wuchao01/iAppBVT.git'
                 }
             }
         }
